@@ -33,17 +33,101 @@
                             <li>Make source code easier to understand</li>
                             <li>Help find bugs</li>
                             <li>Help program faster</li>
+                            <li>Refactoring is for software's tomorrow value(Kent Beck)</li>
                         </ul>
                     </section>
                     <section>
                         <h4>When to refactor</h4>
                         <ul>
-                            <li>rule of three</li>
-                            <li>when adding function</li>
-                            <li>when need to fix a bug</li>
-                            <li>when doing code review</li>
+                            <li>Rule of three</li>
+                            <li>When adding function</li>
+                            <li>When need to fix a bug</li>
+                            <li>When doing code review</li>
                         </ul>
                     </section>
+                    <section>
+                        <h4>Refactoring and indirection</h4>
+                        <ul>
+                            <li>Software engineering is process of indirection.</li>
+                            <li>Refactoring introduce more indirection into the code.</li>
+                            <li>...But indirection can pay for themself.</li>
+                        </ul>
+                    </section>
+                </section>
+                <section>
+                    <section>
+                        <h4>Refactoring and DB schema</h4>
+                    </section>
+                    <section>
+                        <h4>Refactoring and changing interfaces</h4>
+                        <ul>
+                            <li>Try to arrange old interfaces to call new ones, <b>DO NOT COPY</b></li>
+                            <li>Do not publish your interface prematurely</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h4>Refactoring and design</h4>
+                        <ul>
+                            <li>Flexible design form start is hard</li>
+                            <li>Simple design and refactor later might work</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h4>Refactoring and optimization</h4>
+                        <ul>
+                            <li>Write first then optimize</li>
+                            <li>Write and optimize at the same time</li>
+                            <li>Write clear code first, then profile and optimize</li>
+                        </ul>
+                    </section>
+                </section>
+                <section>
+                    <section>
+                        <h4>Code smells</h4>
+                        <ul>
+                            <li>Duplicated code: extract method, substitute algorithm, extract class</li>
+                            <li>Long method: look for comments, they 're candidates for extract method</li>
+                            <li>Large class: Extract class, extract subclass</li>
+                            <li>Long parameter list: replace parameter with method, introduce parameter object</li>
+                            <li>Divergent change: difference types of common change point to same object - extract class</li>
+                            <li>Shotgun surgery: one common change involves many places - move method, move field, inline class</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h4>Code smells</h4>
+                        <ul>
+                            <li>Feature envy: a method interested in other class more than its - move method, extract method(envy bits)</li>
+                            <li>Data clumps: data chunking together - extract class, introduce parameter object, preserve whole object</li>
+                            <li>Primitive obsession: tend of not using small classes</li>
+                            <li>Switch statement: replace type code with sub-classes</li>
+                            <li>Parallel inheritance hierarchy: same hierarchy repeats</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h4>Code smells</h4>
+                        <ul>
+                            <li>Lazy class: class that does not pay for itself - inline class, collapse hierarchy</li>
+                            <li>Speculative Generality: 'we might need it someday' saying</li>
+                            <li>Temporary Field: object with instance variable is set only in certain circumstances</li>
+                            <li>Message chain: long chain of get... calls - hide delegate, move method</li>
+                            <li>Middle man: delegating going too far - remove middle man, replace delegation with inheritance</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h4>Code smells</h4>
+                        <ul>
+                            <li>Inappropriate Intimacy: object spend too much time meddling with other's private data</li>
+                            <li>Alternative Classes with Different Interfaces</li>
+                            <li>Incomplete Library Class</li>
+                            <li>Data Class</li>
+                            <li>Refused Bequest</li>
+                            <li>Comments</li>
+                        </ul>
+                    </section>
+                </section>
+                </section>
+                </section>
+                </section>
                 </section>
 			      </div>
 		    </div>
