@@ -92,8 +92,7 @@ body {
 
 .reveal em {
   font-style: italic;
-  font-weight: bold;
-  font-size: 1.1em;
+  color: #eee8d5;/* header color */
 }
 
 .reveal ol,
